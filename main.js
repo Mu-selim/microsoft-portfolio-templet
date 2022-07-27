@@ -3,7 +3,8 @@ let arrow = document.querySelectorAll('.arrow'),
     sectionCont = document.querySelectorAll('.section-cont');
 
 let flag0 = false, flag1 = false, flag2 = false, flag3 = false,
-    flag4 = false, flag5 = false, flag6 = false;
+    flag4 = false, flag5 = false, flag6 = false, flag7 = false,
+    flag8 = false;
 
 function showDiv(i) {
     arrow[i].textContent = "▼";
@@ -85,5 +86,25 @@ arrow[6].addEventListener("click", ()=> {
     } else {
         hideDiv(6);
         flag6 = false;
+    }
+})
+
+arrow[7].addEventListener("click", ()=> {
+    if (!flag7) {
+        showDiv(7);
+        flag7 = true;
+    } else {
+        hideDiv(7);
+        flag7 = false;
+    }
+})
+
+arrow[8].addEventListener("click", ()=> {
+    if (!flag8) {
+        showDiv(8);
+        flag8 = true;
+    } else {
+        hideDiv(8);
+        flag8 = false;
     }
 })
