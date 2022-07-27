@@ -153,12 +153,8 @@
     border-radius: 8px;
 }
 
-.lang-icon {
-    width: 28px;
-    height: 28px;
-}
-
 .list li:hover {
     background-color: var(--white);
     color: var(--gray);
+    cursor: pointer;
 }
