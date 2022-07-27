@@ -6,14 +6,14 @@ let flag0 = false, flag1 = false, flag2 = false, flag3 = false,
     flag4 = false, flag5 = false, flag6 = false;
 
 function showDiv(i) {
-    arrow[i].src = "Images/icon-arrow-down.png";
+    arrow[i].textContent = "▼";
     section[i].style.borderBottomLeftRadius = "0px";
     section[i].style.borderBottomRightRadius = "0px";
     sectionCont[i].style.display = "block";
 }
 
 function hideDiv(i) {
-    arrow[i].src = "Images/icon-arrow-right.png";
+    arrow[i].textContent = "►";
     section[i].style.borderRadius = "8px";
     sectionCont[i].style.display = "none";
 }
