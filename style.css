@@ -1,6 +1,6 @@
 :root {
     --gray: #4a4f53;
-    --gray-op: #4a4f53dc;
+    --gray-op: #2e2e2ea9;
     --gray-light: #74858c;
     --white: #fff;
     --white-op: rgba(255, 255, 255, 0.301);
@@ -34,6 +34,7 @@
     margin-top: 60px;
     padding: 16px 32px;
     background-color: var(--gray-op);
+    backdrop-filter: blur(8px);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     position: relative;
@@ -160,6 +161,7 @@
     padding: 16px 100px;
     margin-bottom: 16px;
     background-color: var(--black-op);
+    backdrop-filter: blur(8px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,6 +194,7 @@
     width: 100%;
     padding: 8px 32px;
     background-color: var(--black-op);
+    backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
     justify-content: space-between;
