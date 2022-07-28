@@ -1,3 +1,5 @@
+'use-strict'
+
 let arrow = document.querySelectorAll('.arrow'),
     section = document.querySelectorAll('.section'),
     sectionCont = document.querySelectorAll('.section-cont');
