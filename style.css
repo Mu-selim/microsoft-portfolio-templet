@@ -1,8 +1,10 @@
 :root {
     --gray: #4a4f53;
+    --gray-op: #4a4f53dc;
     --gray-light: #74858c;
     --white: #fff;
-    --black: #000;
+    --white-op: rgba(255, 255, 255, 0.301);
+    --black-op: rgba(0, 0, 0, 0.767);
 }
 
 ::placeholder {
@@ -16,11 +18,8 @@
     color: var(--white);
 }
 
-body {
-    width: 100%;
-}
-
 .main {
+    height: fit-content;
     background-image: url("Images/wallpaperflare.com_wallpaper.png");
     background-position: center;
     background-size: cover;
@@ -34,8 +33,7 @@ body {
     width: 80vw;
     margin-top: 60px;
     padding: 16px 32px;
-    background-color: var(--gray);
-    opacity: 0.8;
+    background-color: var(--gray-op);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     position: relative;
@@ -71,7 +69,7 @@ body {
     margin: 12px 0 0 0;
     padding: 8px;
     width: 100%;
-    background-color: var(--gray-light);
+    background-color: var(--white-op);
     display: flex;
     justify-content: space-between;
     border-radius: 8px;
@@ -110,19 +108,11 @@ body {
     cursor: pointer;
 }
 
-.arrow.active .arrow::before {
-    transform: (90deg);
-}
-
-.arrow.active .arrow::after {
-    transform: (-90deg);
-}
-
 .section-cont {
     padding: 0 52px 16px 52px;
     font-size: 12px;
     font-weight: 400;
-    background-color: var(--gray-light);
+    background-color: var(--white-op);
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
     display: none;
@@ -169,8 +159,7 @@ body {
     height: 60px;
     padding: 16px 100px;
     margin-bottom: 16px;
-    background-color: var(--black);
-    opacity: 0.7;
+    background-color: var(--black-op);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -202,8 +191,7 @@ body {
     margin-top: 16px;
     width: 100%;
     padding: 8px 32px;
-    background-color: var(--black);
-    opacity: 0.7;
+    background-color: var(--black-op);
     display: flex;
     align-items: center;
     justify-content: space-between;
