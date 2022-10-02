@@ -3,8 +3,8 @@ const day = document.querySelector('.day'),
       year = document.querySelector('.year');
 
 let date = new Date();
-const d = date.getDay(),
-      m = date.getMonth(),
+const d = date.getDate(),
+      m = date.getMonth() + 1,
       y = date.getFullYear();
 // console.log(d, m, y);
 
